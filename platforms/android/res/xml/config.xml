@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<widget android-versionCode="2" id="com.zzq.hotcode" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <feature name="Whitelist">
+    <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin"/>
+    <param name="onload" value="true"/>
+  </feature>
+  <feature name="HotCodePush">
+    <param name="android-package" value="com.nordnetab.chcp.main.HotCodePushPlugin"/>
+    <param name="onload" value="true"/>
+  </feature>
+  <feature name="HotCodePushLocalDevMode">
+    <param name="android-package" value="com.nordnetab.chcp.localdev.HotCodePushLocalDevPlugin"/>
+    <param name="onload" value="true"/>
+  </feature>
+  <name>HelloCordova</name>
+  <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+  <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+  <content src="index.html"/>
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <allow-intent href="market:*"/>
+  <chcp>
+    <auto-download enabled="true"/>
+    <auto-install enabled="true"/>
+    <config-file url="http://192.168.40.203:8080/cordova/www/chcp.json"/>
+    <local-development enabled="true"/>
+  </chcp>
+  <preference name="loglevel" value="DEBUG"/>
+  <preference name="loadUrlTimeoutValue" value="60000"/>
+</widget>
